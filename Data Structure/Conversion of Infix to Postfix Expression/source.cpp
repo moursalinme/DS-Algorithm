@@ -11,6 +11,7 @@ void print(stack<char> &s, string &ans) {
 int main() {
     stack <char> ms;
     string ans, s;
+    cout << "Enter a Infix expression" << endl;
     cin >> s;
     int i = 0, sz = s.size();
     ms.push('(');
@@ -46,6 +47,6 @@ int main() {
        	    ans += ms.top(); ms.pop();
 	}
     }
-    cout << ans << endl;
+    cout << "Postfix expression is :  " << ans << endl;
     return 0;
 }
