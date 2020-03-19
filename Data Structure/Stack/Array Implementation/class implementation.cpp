@@ -34,7 +34,7 @@ int main()
     then declare the size using -> variable_name.createsize(size);
     */
 
-    Stack <int> var(5);
+    Stack <int> var; var.setstacksize(5);
 
     // push and pop             // current state of the stack
     var.push(5);                // 5
@@ -91,10 +91,10 @@ template<class T> T Stack<T>::peek() {
 }
 
 template<class T> void Stack<T>::clr() {
-    free(ara);
+    free(ara); end = 0;
 }
 
 template<class T> void Stack<T>::setstacksize(int x) {
     ara = new T[x]; 
-    sz = x;
+    sz = x; end = 0;
 }
