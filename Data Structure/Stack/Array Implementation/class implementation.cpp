@@ -17,7 +17,7 @@ template <class T> class Stack{
         void push(T x);
         void pop();
         int size();
-        int peek();
+        T peek();
         bool is_full();
         bool is_empty();
         void clr();
@@ -50,7 +50,7 @@ int main()
     
 
     // current stack size
-     x  = var.size();
+    x  = var.size();
     cout << x << endl;
     return 0;
 }
@@ -85,7 +85,7 @@ template<class T> int Stack<T>::size() {
     return end - 0;
 }
 
-template<class T> int Stack<T>::peek() {
+template<class T> T Stack<T>::peek() {
     if(end == 0) return rand();
     else return ara[end-1];
 }
