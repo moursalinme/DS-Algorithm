@@ -9,7 +9,7 @@ int total_nodes = xxxxx; /* xxxx must be a decimal number */
 void bfs(bool adj_list[][total_nodes], int dis_from_src[], int source) {
 	
 	bool vis[total_nodes+1];
-	memset(vis, false, total_nodes+1);
+	memset(vis, false, total_nodes+1); 
 	memset(dis_from_src, 0, total_nodes+1);
 	queue<int> q;
 	q.push(source);
