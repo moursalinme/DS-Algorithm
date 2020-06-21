@@ -30,6 +30,6 @@ void bfs(bool adj_list[][total_nodes], int dis_from_src[], int source) {
 				vis[i] = true;
 			}
 		}
-	}
+	} 
 	cout << endl;
 }
