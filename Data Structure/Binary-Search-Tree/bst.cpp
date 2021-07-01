@@ -171,15 +171,15 @@ public:
   }
 
   void inorder_traversal () {
-    if (!root) {
+    if (root) {
       inorder (root);
       cout << endl;
     }
     return;
   }
 
-  void preorder_treversal () {
-    if (!root) {
+  void preorder_traversal () {
+    if (root) {
       preorder (root);
       cout << endl;
     }
@@ -187,7 +187,7 @@ public:
   }
 
   void postorder_traversal () {
-    if (!root) {
+    if (root) {
       postorder (root);
       cout << endl;
     }
